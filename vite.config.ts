@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Add the base path for GitHub Pages deployment
+  base: "/norwegian-coastal-flock/", 
   server: {
     host: "::",
     port: 8080,
