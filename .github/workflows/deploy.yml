@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Or "master" depending on your repo
+    branches: [main]
 
 permissions:
   contents: write
@@ -28,5 +28,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # Vite builds into the 'dist' folder
+          folder: dist # Vite outputs to 'dist'
           branch: gh-pages
